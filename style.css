@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+h1 {
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: gray;
+}
+
+#form {
+    position: relative;
+    border: 2px solid #131313;
+    background: linear-gradient(#1e2024, #18181c);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#form #email {
+    background-color: transparent;
+    width: 300px;
+    padding: 13px 15px;
+    font-size: 18px;
+    color: #fff;
+    padding-right: 50px;
+    outline: none;
+    border: navajowhite;
+    font-weight: 600;
+}
+
+.indicator {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #555;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+#form.valid .indicator {
+    background: rgb(0, 255, 13);
+    box-shadow: 0 0 5px rgb(0, 255, 13), 0 0 10px rgb(0, 255, 13), 0 0 20px rgb(0, 255, 13), 0 0 30px rgb(0, 255, 13), 0 0 40px rgb(0, 255, 13);
+}
+
+#form.invalid .indicator {
+    background: rgb(255, 0, 0);
+    box-shadow: 0 0 5px rgb(255, 0, 0), 0 0 10px rgb(255, 0, 0), 0 0 20px rgb(255, 0, 0), 0 0 30px rgb(255, 0, 0), 0 0 40px rgb(255, 0, 0);
+}
